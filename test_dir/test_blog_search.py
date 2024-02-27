@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author : wp
+# @Author : QQ
 # @Time : 2022/2/25 23:10
 # @File : test_blog_search.py
 
@@ -31,7 +31,7 @@ class Test_Search_Blog:
         """
         sp = SearchPage(browser)
         with allure.step('进行搜索操作'):
-            sp.search(args)
+            sp.search(args['txt'])
         with allure.step('检查搜索结果'):
             text = sp.get_text(sp.result_element)
             assert args["txt"] in text

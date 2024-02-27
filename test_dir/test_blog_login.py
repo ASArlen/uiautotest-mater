@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author: wp
-# @Time: 2021/5/26 18:24
+# @Author: QQ
+# @Time: 2022/5/26 18:24
 # @File: test_blog_login.py
 
 import pytest
@@ -28,6 +28,7 @@ class Test_Login_Blog:
         3、打开登录页面
         4、输入用户名和密码
         5、点击登录
+        6.QQ测试
         检查点：
         * 检查是否错误用户名密码导致登录失败。
         """

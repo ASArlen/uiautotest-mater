@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author : wp
+# @Author : QQ
 # @Time : 2022/2/25 16:25
 # @File : logs.py
 

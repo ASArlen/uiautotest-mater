@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author: wp
-# @Time: 2021/6/26 18:24
+# @Author: QQ
+# @Time: 2022/6/26 18:24
 # @File: blog_page.py
 from selenium.webdriver.common.by import By
 from base.base_page import BasePage

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author : wp
+# @Author : QQ
 # @Time : 2022/2/25 22:59
 # @File : search_page.py
 
@@ -18,12 +18,19 @@ class SearchPage(BasePage):
     search_button_element = (By.ID, "search_btn")
     result_element = (By.XPATH, '//*[@id="searchResult"]/div[2]/div[1]/h3/a')
 
+
     # 元素操作进行封装
     def search(self, args):
         # 进入搜索页面
         self.open(self.url)
         self.get_display(self.input_element)
         # '输入搜索文本内容'
-        self.send_value(self.input_element, args['txt'])
+        # self.send_value(self.input_element, args['txt'])
+        self.send_value(self.input_element, args)
         # '点击找一下按钮'
         self.click(self.search_button_element)
+
+    # 点击进入查询到的第*条记录
+    def click_record(self,num):
+        click_record = (By.XPATH, '//h3[@class="searchItemTitle"]/a[' + str(num) + ']')
+        self.click(click_record)
