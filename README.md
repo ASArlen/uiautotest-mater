@@ -1,4 +1,4 @@
-# ui_autotest
+# uiautotest-mater
 python + selenium + pytest + allure
 
 ### 特点
