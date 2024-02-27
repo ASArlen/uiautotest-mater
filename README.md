@@ -7,7 +7,7 @@ python + selenium + pytest + allure
 * 测试用例运行失败自动截图。
 * 测试用例运行失败可以重跑。
 * 测试数据参数化。
-
+ 
 ### 安装
 
 ```shell
